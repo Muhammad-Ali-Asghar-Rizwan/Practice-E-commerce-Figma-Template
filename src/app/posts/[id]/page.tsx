@@ -2,13 +2,11 @@
 
 "use client";
 
-import ProductCard from '@/app/BestProduct/ProductCard';
 import Sales from '@/app/Sales/page';
-import { Car, CircleAlert, CircleArrowRight, CircleCheck, Heart } from 'lucide-react';
+import { Car, CircleAlert,  Heart } from 'lucide-react';
 import { useParams } from 'next/navigation';
 
 import React from 'react';
-import { TbCircleRectangle } from 'react-icons/tb';
 
 const posts = [
   {
