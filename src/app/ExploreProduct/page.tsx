@@ -91,7 +91,7 @@ function ExploreProduct() {
           <div className="grid grid-cols-1 mt-8 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {posts.map((post, index) => (
               <div className="fade-in" key={post.id}>
-                <ExpProductCard post={post} isDarkBackground={index % 2 === 0} />
+                <ExpProductCard post={post}  />
               </div>
             ))}
           </div>

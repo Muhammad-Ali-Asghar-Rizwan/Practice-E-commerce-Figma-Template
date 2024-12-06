@@ -90,7 +90,7 @@ function AllProduct() {
             {posts.map((post, index) => (
               <div className="fade-in" key={post.id}>
 
-                <AllProductCard post={post} isDarkBackground={index % 2 === 0} />
+                <AllProductCard post={post} />
               </div>
             ))}
           </div>

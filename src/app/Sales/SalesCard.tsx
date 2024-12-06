@@ -5,10 +5,10 @@ import { CiHeart } from "react-icons/ci";
 
 interface BlogCardProps {
   post: { id: string; title: string; price: string; resp: string; imageUrl: string };
-  isDarkBackground: boolean;
+  // isDarkBackground: boolean;
 }
 
-export default function BlogCard({ post, isDarkBackground }: BlogCardProps) {
+export default function BlogCard({ post,  }: BlogCardProps) {
   return (
     <div className='mx-8 '>
         <div className='h-[220px]  w-[230px] bg-[#F5F5F5]'>

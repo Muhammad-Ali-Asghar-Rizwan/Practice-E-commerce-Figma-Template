@@ -5,10 +5,10 @@ import React from 'react'
 
 interface ProductCardProps {
     post: { id: string; title: string; price: string; resp: string; imageUrl: string };
-    isDarkBackground: boolean;
+    // isDarkBackground: boolean;
   }
   
-function AllProductCard({ post, isDarkBackground }:  ProductCardProps) {
+function AllProductCard({ post,  }:  ProductCardProps) {
   return (
     <div>
          <div className='mx-8 '>

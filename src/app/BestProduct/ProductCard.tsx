@@ -2,10 +2,10 @@ import React from 'react';
 
 interface ProductCardProps {
   post: { id: string; title: string; price: string; resp: string; imageUrl: string };
-  isDarkBackground: boolean;
+  // isDarkBackground: boolean;
 }
 
-export default function ProductCard({ post, isDarkBackground }:  ProductCardProps) {
+export default function ProductCard({ post, }:  ProductCardProps) {
   return (
     <div className='mx-8 '>
         <div className='h-[250px] flex items-center justify-center  w-[270px] bg-[#F5F5F5]'>
