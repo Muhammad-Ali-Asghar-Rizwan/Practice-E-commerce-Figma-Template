@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Image from 'next/image';
 interface ProductCardProps {
   post: { id: string; title: string; price: string; resp: string; imageUrl: string };
   // isDarkBackground: boolean;
@@ -12,7 +13,7 @@ export default function ProductCard({ post, }:  ProductCardProps) {
             <div className='flex flex-col items-center justify-center'>
                
 
-            <img
+            <Image
                 src={post.imageUrl}
                 alt={post.title}
                 className="w-[190px] object-cover rounded-lg"
