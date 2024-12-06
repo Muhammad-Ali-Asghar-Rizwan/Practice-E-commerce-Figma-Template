@@ -1,7 +1,6 @@
 import React from 'react';
 import BlogCard from '@/app/Sales/SalesCard';
 import { RiCheckboxBlankFill } from "react-icons/ri";
-import { FaStar } from "react-icons/fa";
 import Link from 'next/link';
 
 

@@ -1,10 +1,6 @@
-import { RiCheckboxBlankFill } from "react-icons/ri";
-import { CiMobile4 } from "react-icons/ci";
-import { HiOutlineComputerDesktop } from "react-icons/hi2";
-import { BsSmartwatch } from "react-icons/bs";
-import { CiCamera } from "react-icons/ci";
+
 import { CiHeadphones } from "react-icons/ci";
-import { LuGamepad } from "react-icons/lu";
+
 import { FaCarSide } from "react-icons/fa";
 import { AiFillSafetyCertificate } from "react-icons/ai";
 import { SiHomeassistantcommunitystore } from "react-icons/si";

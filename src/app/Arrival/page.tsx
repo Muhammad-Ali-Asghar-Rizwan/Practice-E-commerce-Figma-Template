@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import React from 'react'
 import { RiCheckboxBlankFill } from "react-icons/ri";
 import { FaCarSide } from "react-icons/fa";

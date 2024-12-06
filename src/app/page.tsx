@@ -1,4 +1,3 @@
-import Image from "next/image";
 import HomePage from "./Home/page";
 import Sales from "./Sales/page";
 import Category from "./Category/page";

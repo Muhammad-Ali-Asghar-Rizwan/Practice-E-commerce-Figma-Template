@@ -1,13 +1,4 @@
 import React from 'react';
-import {
-  Card,
-  CardContent,
-  CardTitle,
-} from '@/app/components/ui/card';
-
-import { CiHeart } from "react-icons/ci";
-import Link from 'next/link';
-
 
 interface ProductCardProps {
   post: { id: string; title: string; price: string; resp: string; imageUrl: string };
