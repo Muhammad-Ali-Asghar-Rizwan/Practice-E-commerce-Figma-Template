@@ -83,7 +83,7 @@ const Sales = () => {
         Exploring the World of AI and Technology
       </h1> */}
       <div className="grid grid-cols-1 mt-8 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-        {posts.map((post, index) => (
+        {posts.map((post) => (
           <div className="fade-in" key={post.id}>
             <BlogCard post={post}  />
           </div>

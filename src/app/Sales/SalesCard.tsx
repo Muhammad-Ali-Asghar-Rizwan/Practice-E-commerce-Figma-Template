@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 import { CiHeart } from "react-icons/ci";
@@ -25,9 +26,11 @@ export default function BlogCard({ post,  }: BlogCardProps) {
 
                 </div>
 
-            <img
+            <Image
                 src={post.imageUrl}
                 alt={post.title}
+                width={200}
+                height={200}
                 className="w-[190px] object-cover rounded-lg"
                 />
 

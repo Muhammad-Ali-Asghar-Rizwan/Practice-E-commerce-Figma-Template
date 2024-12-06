@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 function page() {
@@ -6,7 +7,7 @@ function page() {
             <div className=' max-w-[1200px] mx-auto' id='sign'>
         <div className='flex items-center justify-around py-9'>
             <div className='hidden md:flex'>
-                <img src='/images/account.png' className='w-[805px] h-[781px]'/>
+                <Image src='/images/account.png' alt='user' width={200} height={200} className='w-[805px] h-[781px]'/>
             </div> 
             <div>
               <h1 className='text-4xl font-semibold'>Log in to Exclusive</h1>

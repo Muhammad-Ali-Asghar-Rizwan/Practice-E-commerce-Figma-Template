@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react'
 
 
@@ -16,9 +17,11 @@ function ExpProductCard({ post,  }:  ProductCardProps) {
             <div className='flex flex-col items-center justify-center'>
                
 
-            <img
+            <Image
                 src={post.imageUrl}
                 alt={post.title}
+                width={200} 
+                height={200}
                 className="w-[190px] object-cover rounded-lg"
                 />
 

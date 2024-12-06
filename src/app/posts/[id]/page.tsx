@@ -3,7 +3,8 @@
 "use client";
 
 import Sales from '@/app/Sales/page';
-import { Car, CircleAlert,  Heart } from 'lucide-react';
+import { Car, CircleAlert,  Heart, } from 'lucide-react';
+import Image from 'next/image';
 import { useParams } from 'next/navigation';
 
 import React from 'react';
@@ -258,7 +259,7 @@ export default function Post() {
       {post.image && (
         <div className='w-[300px] md:w-[500px] h-[600px] flex  items-center justify-center bg-[#F5F5F5] rounded'>
 
-        <img src={post.image} alt={post.title} className='w-[426px] h-auto rounded-md mt-4' />
+        <Image src={post.image} alt={post.title} width={200} height={200} className='w-[426px] h-auto rounded-md mt-4' />
         </div>
       )}
 

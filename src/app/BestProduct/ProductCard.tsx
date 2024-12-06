@@ -16,6 +16,8 @@ export default function ProductCard({ post, }:  ProductCardProps) {
             <Image
                 src={post.imageUrl}
                 alt={post.title}
+                width={200} 
+                height={200}
                 className="w-[190px] object-cover rounded-lg"
                 />
 
