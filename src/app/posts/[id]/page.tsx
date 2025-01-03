@@ -1,6 +1,7 @@
 
 
 "use client";
+import { useCart } from "@/app/context/CartContext";
 
 import Sales from '@/app/Sales/page';
 import { Car, CircleAlert,  Heart, } from 'lucide-react';
@@ -232,6 +233,9 @@ const posts = [
 ];
 
 export default function Post() {
+  const { addToCart } = useCart();
+
+
   const params = useParams(); // Access dynamic route parameters
   const id = params?.id; // Ensure `id` is defined
 
@@ -249,6 +253,20 @@ export default function Post() {
         {para.trim()}
       </p>
     ));
+  };
+
+ 
+  const handleBuyNow = () => {
+    const product = {
+      id: 1, // Unique product ID
+      name: "LCD Monitor",
+      price: 650,
+      quantity: 1,
+      image: "/images/monitor.png",
+    };
+
+    addToCart(product);
+    alert("Product added to cart!");
   };
 
   return (
@@ -298,8 +316,12 @@ export default function Post() {
         <div className='w-10 font-bold flex items-center justify-center bg-[#DB4444] text-white  h-11  border border-stone-400 '>+</div>
       </div>
       {/* buy */}
-      <button className='h-11 w-40 bg-[#DB4444] text-white flex items-center justify-center'>Buy Now</button>
-      {/* dil */}
+      <button
+        onClick={handleBuyNow}
+        className="h-11 w-40 bg-[#DB4444] text-white flex items-center justify-center"
+      >
+        Buy Now
+      </button>      {/* dil */}
       <div className='h-10 w-10 border-2 border-black flex items-center justify-center rounded-lg '><Heart/> </div>
       </div>
 

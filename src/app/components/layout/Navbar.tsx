@@ -36,7 +36,9 @@ function Navbar() {
       <IoSearchOutline  className='w-6 h-6  relative right-8'/>
       <div className='hidden md:flex gap-3'>
       <CiHeart className='w-8 h-8'/>
+      <Link href="/cart" className='hover:cursor-pointer'>
       <MdOutlineShoppingCart  className='w-8 h-8'/>
+      </Link>
       </div>
 
 

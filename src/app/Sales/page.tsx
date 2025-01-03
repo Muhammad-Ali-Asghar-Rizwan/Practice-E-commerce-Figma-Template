@@ -82,7 +82,7 @@ const Sales = () => {
       {/* <h1 className="text-3xl font-bold text-center my-8 text-red-600 animate-color-change">
         Exploring the World of AI and Technology
       </h1> */}
-      <div className="grid grid-cols-1 mt-8 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="grid grid-cols-1 mt-8 sm:grid-cols-2 lg:grid-cols-4 items-center justify-center gap-8">
         {posts.map((post) => (
           <div className="fade-in" key={post.id}>
             <BlogCard post={post}  />

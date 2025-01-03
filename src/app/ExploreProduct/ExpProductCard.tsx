@@ -12,7 +12,7 @@ interface ProductCardProps {
 function ExpProductCard({ post,  }:  ProductCardProps) {
   return (
     <div>
-         <div className='mx-8 '>
+         <div className='mx-8'>
         <div className='h-[250px] flex items-center justify-center  w-[270px] bg-[#F5F5F5]'>
             <div className='flex flex-col items-center justify-center'>
                
